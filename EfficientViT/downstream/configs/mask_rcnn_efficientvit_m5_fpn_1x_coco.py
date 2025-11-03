@@ -8,8 +8,8 @@ _base_ = [
 model = dict(
     pretrained=None,
     backbone=dict(        
-        type='EfficientViT_M4',
-        pretrained="/root/efficientvit_m4.pth",
+        type='EfficientViT_M5',
+        pretrained="/root/efficientvit_m5.pth",
         frozen_stages=-1,
         ),
     neck=dict(
