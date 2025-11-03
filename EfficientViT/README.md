@@ -40,7 +40,7 @@ python -m torch.distributed.launch --nproc_per_node=8  --use_env main.py --model
 This section demonstrates how to compute **Transfer Entropy (TE)** during model evaluation using the `evaluate` function.
 
 ```python
-# Evaluate without skipping any layers
+# Evaluate without skipping any layers or blocks
 test_stats, init_entropy = evaluate(data_loader_val, model, device, skip_blocks=[])
 
 # Example: Skip block/attention/mlp 2 and block/attention/mlp 5, then observe entropy changes
