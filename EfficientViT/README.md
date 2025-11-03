@@ -1,6 +1,6 @@
-# EfficientViT for Image Classification
+# EfficientViT for Object Detection
 
-The codebase implements the image classification with EfficientViT.
+The codebase implements the object detection with EfficientViT.
 
 ## Get Started
 
@@ -22,12 +22,7 @@ ImageNet-1k contains 1.28 M images for training and 50 K images for validation.
 The images shall be stored as individual files:
 
 
-## Evaluation
 
-Run the following command to evaluate a pre-trained EfficientViT-M5 on ImageNet val with a single GPU:
-```bash
-python main.py --eval --model EfficientViT_M5 --resume ./efficientvit_m5.pth --data-path $PATH_TO_IMAGENET
-```
 
 ## Training
 
@@ -36,8 +31,9 @@ python main.py --eval --model EfficientViT_M5 --resume ./efficientvit_m5.pth --d
 python -m torch.distributed.launch --nproc_per_node=8  --use_env main.py --model EfficientViT_M5 --data-path $PATH_TO_IMAGENET --dist-eval
 ```
 
+### After pre-training on ImageNet-1K, the pruned model should be fine-tuned on MS-COCO.
 
-### Transfer Entropy Calculation Example
+## Transfer Entropy Calculation Example
 
 This section demonstrates how to compute **Transfer Entropy (TE)** during model evaluation using the `evaluate` function.
 
