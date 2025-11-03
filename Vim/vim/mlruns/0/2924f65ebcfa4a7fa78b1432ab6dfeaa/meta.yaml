@@ -1,0 +1,15 @@
+artifact_uri: file:///root/autodl-tmp/Vim/vim/mlruns/0/2924f65ebcfa4a7fa78b1432ab6dfeaa/artifacts
+end_time: 1761227679150
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2924f65ebcfa4a7fa78b1432ab6dfeaa
+run_name: delightful-cat-242
+run_uuid: 2924f65ebcfa4a7fa78b1432ab6dfeaa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761227617578
+status: 3
+tags: []
+user_id: root

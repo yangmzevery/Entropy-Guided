@@ -1,0 +1,15 @@
+artifact_uri: file:///root/autodl-tmp/Vim/vim/mlruns/0/077a04a884bd494aa83e82361d0b088e/artifacts
+end_time: 1761239210082
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 077a04a884bd494aa83e82361d0b088e
+run_name: rogue-shoat-219
+run_uuid: 077a04a884bd494aa83e82361d0b088e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761239194457
+status: 3
+tags: []
+user_id: root
