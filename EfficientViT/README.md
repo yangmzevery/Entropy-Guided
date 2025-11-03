@@ -17,12 +17,7 @@ pip install -r requirements.txt
 
 
 - ImageNet-1k
-
-ImageNet-1k contains 1.28 M images for training and 50 K images for validation.
-The images shall be stored as individual files:
-
-
-
+- MS-COCO
 
 ## Training
 
@@ -32,6 +27,13 @@ python -m torch.distributed.launch --nproc_per_node=8  --use_env main.py --model
 ```
 
 ### After pre-training on ImageNet-1K, the pruned model should be fine-tuned on MS-COCO.
+
+```bash
+ torchrun --nproc_per_node=8 tools/train.py \
+ configs/retinanet/retinanet_efficientvit_m5_fpn_1x_coco.py \
+ --launcher pytorch \
+ --work-dir
+```
 
 ## Transfer Entropy Calculation Example
 
