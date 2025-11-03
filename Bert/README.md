@@ -1,6 +1,6 @@
-# 📘 Bert Fine-tuning on 20 Newsgroups
+# 📘 Bert Fine-tuning on 20news
 
-This project fine-tunes a pre-trained **Bert** model on the **20 Newsgroups** dataset for text classification.
+This project fine-tunes a pre-trained **Bert** model on the **20news** dataset for text classification.
 
 ---
 
@@ -14,7 +14,7 @@ This project fine-tunes a pre-trained **Bert** model on the **20 Newsgroups** da
 
 ## 🧠 Dataset
 
-The **20 Newsgroups** dataset is a well-known benchmark for text classification.  
+The **20news** dataset is a well-known benchmark for text classification.  
 
 ---
 
